@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Marmelad&display=swap');
+
+
+.header {
+  /*background-color: #00bfb6;*/
+  display: inline-block;
+  box-sizing: border-box;
+  border: #00bfb6 2px solid;
+  width: 100%;
+  text-align: center;
+}
+h1.name {
+  font-size: 50px;
+  text-shadow: -5px -5px 0px #EF7657;
+  background: radial-gradient(#9DA8A9 1px, transparent 1px);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 20px auto;
+}
+.timeOne {
+  text-align: right;
+  font-weight: lighter;
+  color: gainsboro;
+  font-family: 'Dosis', sans-serif;
+  vertical-align: top;
+  }
+
+
+.bubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.avatar img {
+  height: 60px;
+  width: 60px;
+  padding-left: 40px;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+.box1 {
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #00bfb6;
+  color: #fff;
+  padding: 20px;
+  text-align: justify;
+  /*font-weight: 900;*/
+  font-family: 'Marmelad', sans-serif;
+  position: relative;
+
+}
+  .sb5:before {
+    content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #00bfb6;
+  border-top: 15px solid #00bfb6;
+  border-bottom: 15px solid transparent;
+  left: -16px;
+  top: 0px;
+}
+.name {
+  font-family: 'Marmelad', sans-serif;
+  font-style: initial;
+  font-weight: bolder;
+  color: lightsalmon;
+  
+}
+.time {
+  font-weight: lighter;
+  color: gainsboro;
+  font-family: 'Dosis', sans-serif;
+  padding-right: 15%;
+  }
+
+
+  

@@ -1,0 +1,14 @@
+.activeBox {
+    padding: 1vh;
+    box-sizing: border-box;
+    min-height: max-content;
+    min-width: max-content;
+    border: 4px groove #00bfb6;
+    /*border-radius:  15px 100px 15px 100px;*/
+    }
+.title{
+    text-align: center;
+}
+ .listOfNames{
+     padding-left: 20%;
+     }
