@@ -16,8 +16,8 @@ const FirstTaskIn: React.FC<PropsType> = (props: PropsType) => {
     return (
         <div>
         <section className='header'>
-            <h1 className='name'>Hi! I'm {props.state.name} {props.state.surname}</h1>
             <div className='timeOne'>{props.hours}:{props.minutes}</div>
+            <h1 className='name'>Hi! I'm {props.state.name} {props.state.surname}</h1>
         </section>
         <section className='bubble'>
          <div className='avatar'>

@@ -7,6 +7,8 @@
   display: inline-block;
   box-sizing: border-box;
   border: #00bfb6 2px solid;
+  border-left: transparent;
+  border-right: transparent;
   width: 100%;
   text-align: center;
 }
@@ -21,11 +23,14 @@ h1.name {
   margin: 20px auto;
 }
 .timeOne {
+  padding-top: 0.5em;
   text-align: right;
   font-weight: lighter;
   color: gainsboro;
   font-family: 'Dosis', sans-serif;
   vertical-align: top;
+  line-height: 0.2rem;
+  font-size: 20px;
   }
 
 
@@ -75,10 +80,11 @@ h1.name {
   
 }
 .time {
+  text-align: right;
   font-weight: lighter;
   color: gainsboro;
   font-family: 'Dosis', sans-serif;
-  padding-right: 15%;
+  padding-left: 13em;
   }
 
 
