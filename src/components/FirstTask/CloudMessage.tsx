@@ -1,5 +1,6 @@
 import React from 'react';
-import FirstTaskIn from './firstTask_in'
+import CloudMessageContainer from './CloudMessageContainer';
+
 
 
 export type StateType = {
@@ -11,7 +12,7 @@ export type StateType = {
     mesMin: number
 };
 
-export default function FirstTask () {
+export default function CloudMessage () {
 
      let state: StateType = {
         img: `https://cdn.pixabay.com/photo/2016/06/15/16/00/woman-1459220_1280.png`,
@@ -27,9 +28,5 @@ export default function FirstTask () {
         let hours = h.getHours();
         let minutes = h.getMinutes();
             
-    return (
-        <div>
-        <FirstTaskIn state={state} hours={hours} minutes={minutes}/>
-          </div>
-    )
+    return <CloudMessageContainer state={state} hours={hours} minutes={minutes}/>
     }

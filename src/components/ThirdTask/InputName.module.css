@@ -12,3 +12,7 @@
  .listOfNames{
      padding-left: 20%;
      }
+     .input.error {
+        border-width: 3px;
+       border-color: red;
+     }

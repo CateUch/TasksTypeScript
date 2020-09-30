@@ -1,7 +1,7 @@
 import React from 'react';
-import {StateType} from './firstTask';
-import style from './firstTask.module.css';
-import './firstTask.css';
+import {StateType} from './CloudMessage';
+import style from './CloudMessage.module.css';
+import './CloudMessage.css';
 
 type PropsType = {
     state: StateType
@@ -11,7 +11,7 @@ type PropsType = {
 
 
 
-const FirstTaskIn: React.FC<PropsType> = (props: PropsType) => {
+const CloudMessageContainer: React.FC<PropsType> = (props: PropsType) => {
 
     return (
         <div>
@@ -32,4 +32,6 @@ const FirstTaskIn: React.FC<PropsType> = (props: PropsType) => {
              </div>
             )}
 
-export default FirstTaskIn;
+export default CloudMessageContainer;
+
+//{`${style.box1} ${style.sb5}`}

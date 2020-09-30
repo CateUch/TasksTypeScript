@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import style from './App.module.css';
-import FirstTask from './components/FirstTask/firstTask';
-import SecondTask from './components/SecondTask/goals';
-import ThirdTask from './components/ThirdTask/thirdTask'
+import CloudMessage from './components/FirstTask/CloudMessage';
+import List from './components/SecondTask/ListContainer';
+import InputName from './components/ThirdTask/InputName'
 
 export default function App() {
            
   return (
     <div className={style.app_page}>
-        <FirstTask />
-        <SecondTask />
-        <ThirdTask />
+        <CloudMessage />
+        <List />
+        <InputName />
       </div>
   );
 }
