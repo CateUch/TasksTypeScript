@@ -21,7 +21,7 @@ type PropsInputType =
         error?: string|null,
         setError?: (value: string | null) => void,
         onChangeItem?: (value: string) => void,
-        addItem: () => void
+        addItem?: () => void
     };
 
 
@@ -38,15 +38,18 @@ const InputForm = (props: PropsInputType) => {
         if (e.charCode === 13) { addItem && addItem() };
     };
     
-    function onBlur() {setError && setError(null) };
+    function onBlur(e: ChangeEvent<HTMLInputElement>) { 
+       if (setError ) { setError(null) }; 
+    };
 
 
     return (
         <input className={error ? `${style.input} ${style.error}` : 'input'}
             type="text"
+            autoFocus
             onBlur={onBlur}
             onChange={onChange}
-            onKeyPress={onEnterKeyPress}
+            //onKeyPress={onEnterKeyPress}
             {...restProps}
         />
     )

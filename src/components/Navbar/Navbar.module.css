@@ -1,0 +1,135 @@
+.navlink  {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    color: #9DA8A9;
+    font-size: calc(10px + 2vmin);
+    color: gray;
+    /* padding-left: 1vw; */
+ 
+}
+.navlink_active a.active {
+    color: #EF7657;
+}
+.navlink_active  {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    color: #9DA8A9;
+    font-size: calc(10px + 2vmin);
+    color: gray;
+    /* padding-left: 1vw; */
+    transition: 2s;
+    
+}
+
+.navbar {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    transition: all 0.7s linear;
+}
+.menu {
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 50%;
+    /* margin-right: 100px; */
+    margin-top: 2vh;
+    margin-left: 23%;  /*как высчитать?*/
+    background: seashell;
+    cursor: pointer;
+    position: relative;
+}
+.btn, .btn:before, .btn:after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -2px;
+    transition: all 0.5s linear;
+}
+.btn:before, .btn:after {
+    content: '';
+}
+.btn:before {
+    transform: translateY(-10px)
+}
+.btn:after {
+    transform: translateY(10px)
+}
+.btn_active:before, .btn_active:after {
+    content: '';
+}
+.btn_active, .btn_active:before, .btn_active:after {
+    width: 40px;
+    display: block;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-left: -3px;
+    margin-top: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.btn_active {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    background:gray;
+    top: 50%;
+    left: 25%;
+    /* margin-left: 0;
+    margin-top: 0; */
+}
+
+.btn_active:before {
+
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-left: -9px;
+    margin-top: -2px;
+}
+ .btn_active:after {
+     opacity: 0;
+    width: 30px;
+    transform: rotate(35deg);
+    transform-origin: right top;
+} 
+
+
+/* arrow points right */
+/*.btn_active, .btn_active:before, .btn_active:after {
+    width: 50px;
+    height: 3px;
+    display: block;
+    height: 4px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-left: -5px;
+    margin-top: -2px;
+    transition: all 0.5s linear;
+    
+}
+ .btn_active:before {
+    width: 30px;
+    transform: rotate(-35deg);
+    transform-origin: right bottom;
+}
+.btn_active:after {
+    width: 30px;
+    transform: rotate(35deg);
+    transform-origin: right top;
+} */
+

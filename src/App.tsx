@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
+import { HashRouter, Route } from 'react-router-dom';
 import style from './App.module.css';
-import CloudMessage from './components/FirstTask/CloudMessage';
-import List from './components/SecondTask/ListContainer';
-import InputName from './components/ThirdTask/InputName'
+import Navbar from './components/Navbar/Navbar';
+import Junior from './components/pages/Junior';
+import JuniorPlus from './components/pages/JuniorPlus';
+import PreJunior from './components/pages/PreJunior';
+
 
 export default function App() {
-           
+
   return (
-    <div className={style.app_page}>
-        <CloudMessage />
-        <List />
-        <InputName />
+    <HashRouter>
+      <div className={style.page}>
+      <Navbar />
+      <div className={style.app_content}>
+      
+        <Route path='/prejunior' component={PreJunior} />
+        <Route path='/junior' component={Junior} />
+        <Route path='/juniorplus' component={JuniorPlus} />
       </div>
+      </div>
+    </HashRouter>
   );
 }
 
